@@ -1,0 +1,316 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(223, 213, 213);
+    overflow-x: hidden;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px;
+ }
+
+ .logo{
+    font-size: 2rem;
+ }
+ 
+ .navbar-nav a {
+     color: #e8dfdf; /* White text color */
+     text-decoration: none;
+     margin: 0px 15px;
+     font-size: 1.2rem;
+ }
+ 
+
+ .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
+    object-fit: cover;
+ }
+
+ .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.img-fluid{
+    background-image: url("main img.jpg");
+    width: 100dvw;
+    height: 100dvh;
+    background-size: cover;
+    transform: scale(1);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+.img-fluid-box-1{
+    background-image: url("pexels-muffin-1629998.jpg");
+    width: 100dvw;
+    height: 80dvh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img-fluid span{
+    font-size: 4rem;
+    color: white;
+}
+.img-fluid p{
+    text-align: center;
+    padding: 16rem 20rem;
+    font-size: 3rem;
+    color: rgb(197, 197, 197);
+    font-weight: 1000;
+    text-shadow: 0 2px 5px #000000;
+}
+
+.img-fluid span, p{
+    transition: ease-in 2s;
+}
+.img-fluid-box-1 p{
+    text-align: center;
+    padding: 7rem 20em;
+    font-size: 1.25rem;
+    color: rgb(197, 197, 197);
+    font-weight: 300;
+    line-height: 1.85rem;
+}
+
+.img-fluid-box-1 span{
+    font-size: 2.85rem;
+    font-weight: 700;
+    line-height: 10rem;
+}
+
+.img-fluid-box-1 .line{
+    font-weight: 400;
+    line-height: 10rem;
+    font-size: 1.70rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.video-background {
+    width: 100dvw;
+    height: 110dvh;
+    object-fit: cover; /* Ensures the video covers the entire screen */
+    z-index: -1; /* Puts the video behind all other content */
+    opacity: 0.5; /* Optional: adjust transparency */
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.container-main-2 h2{
+    position: absolute;
+    top: 200%;
+    left: 40%;
+    font-size: 2.85rem;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    line-height: 1.85rem;
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+    z-index: 2; /* Ensure it's above the video */
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 290%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.socialicons a i{
+    font-size: 25px;
+    color: black;
+    opacity: 0.9;
+}
+.socialicons a:hover{
+    background-color: #009991;
+    transition: 0.5s;
+}
+.socialicons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.container-main-3{
+    object-fit: cover;
+    height: 75dvh;
+    object-fit: cover;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.gallery img{
+    width: 100%;
+    height: 60dvh;
+    border-bottom: 5px solid #009991;
+    border-right: 5px solid #009991;
+    border-top-left-radius: 100px;
+}
+
+.container-main-3 h1{
+    text-align: center;
+    word-break: break-all;
+    letter-spacing: 0.60rem;
+    padding: 20px;
+}
+
+.container-main-3 a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.container-main-3 a h3{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 55%;
+    color: #000000;
+    text-shadow: 0 2px 5px #ffffff; 
+    text-decoration: overline;
+}
+
+.container-main-3 a p{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 50%;
+    margin: 0 5rem;
+    word-spacing: 1rem;
+    line-height: 2rem;
+    color: rgb(0, 0, 0);
+    background-color: #009991;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 1rem;
+}
+
+.container-main-4{
+    background-image: url("pexels-bemistermister-2442888.jpg");
+    width: 100dvw;
+    height: 100dvh;
+    background-size: cover;
+    object-fit: cover;
+    filter: grayscale(80%);
+}
+
+.container-fluid-2{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 23%;
+    backdrop-filter: sepia(40%);
+    width: 50dvw;
+    height: 60dvh;
+    box-shadow: 50px 50px 50px 50px rgba(0,0,0,0.5);
+}
+
+.container-fluid-2 h2{
+    font-weight: 1000;
+    color: #000000;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+.container-fluid-2 input{
+    display: inline-block;
+    justify-content: center;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #b8b8b8;
+}
+.container-fluid-2 input::placeholder{
+    color: #999797;
+}
+
+.container-fluid-2 .button-section{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+.container-fluid-2 .button{
+    text-align: center;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 15px 140px;
+    transition: 0.3s;
+    box-shadow: 50px 50px 50px 50px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 5px #585757; 
+}
+.container-fluid-2 .button:hover{
+    opacity: 0.7;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 7dvh;
+    background-color: #3e3e3e;
+}
+
+.footer-bottom{
+    display: flex;
+    color: #0c0c0c;   
+}
+
+.footer-bottom p, span{
+    font-size: 1rem;
+}
+
+.Designer{
+    color: white;
+}

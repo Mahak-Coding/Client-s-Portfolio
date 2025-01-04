@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="styles.css">
+<title>Urmin | Prtfolio</title>
+</head>
+<body>
+    <!--Video background element
+    <video class="video-background" autoplay loop muted>
+        <source src="video/home background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>-->
+
+    <!--Navbar-->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="header">
+            <div class="logo"><i class="fa-solid fa-gem"></i></div>
+        </div>
+        <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about-me">About</a>
+        <a href="#my work">My Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+    </div>
+</nav>
+
+<!--Home container-->
+<div class="container-main" id="home">
+
+<div class="img-box-1">
+<div class="img-fluid">
+    <p class="fade-in" id="fadeImage" >Where Creativity <span>Speaks</span> and Ordinary<span> Stops.</span></p>
+</div>
+</div>
+</div>
+
+<div class="img-box-2">
+<div class="img-fluid-box-1">
+        <p><span>Web Designer</span> <br>Crafting visuals that speak louder than words, and websites that redefine the rules of the web. Editing moments into stories, and designs into experiences<br>
+        <span class="line">—"let’s make something unforgettable."</span></p>
+</div>
+</div>
+
+<!--About Me Container-->
+<div class="container-main-2" id="about-me">
+    <video class="video-background" autoplay loop muted>
+        
+        <source src="853986-hd_1920_1080_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2>Yes —"it's Me"</h2>
+    <p class="overlay-text">Hey there! I’m a passionate fresh talent diving into the world of video editing and web design. With a creative eye and a head full of ideas, I'm all about crafting visuals and digital experiences that connect and engage.
+        <br>
+        <br>
+        I may be new, but I’m hungry to learn, adapt, and bring fresh perspectives to the table. My approach is all about blending creativity with tech to make things pop! Excited to team up with creators and brands who want to stand out in the digital world. Let’s build something epic together!
+        <br>
+        <br>
+        I’m a freelancer with a flexible approach – available for any type of work, whether it’s a full-time role, a temp project, or a one-off gig. From video edits for creators to web and video content tailored for businesses, I’m here to make your vision stand out. Reach out if you want quality that delivers.</p>
+
+        <!--social media links-->
+    <div class="socialicons">
+
+        <a href="https://github.com/Mahak-Coding" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/@blcheven8732" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</div>
+
+<!--Work Container-->
+<div class="container-main-3" id="my work">
+    <h1>My Work</h1>
+    <div class="gallery">
+        <a href="#">
+            <img src="pexels-cottonbro-6535346.jpg">
+            <h3>Portfolio-Project</h3>
+            <p>aesthetic portfolio project with HTML, CSS and javascript</p>
+        </a>
+        <a href="#">
+            <img src="pexels-element5-1370296.jpg">
+            <h3>Collage-Website-Clone</h3>
+            <p>similar clone website of my collage</p>
+        </a>
+        <a href="#">
+            <img src="marques-thomas-oNPfZozvh-w-unsplash.jpg">
+            <h3>Amazon-Website-Clone</h3>
+            <p>aesthetic portfolio project with HTML and CSS only</p>
+        </a>
+    </div>
+</div>
+
+<!--contact container-->
+<div class="container-main-4" id="contact">
+     <div class="container-fluid-2">
+        <h2>Speak Your Mind —We're Listening</h2>
+       <input type="email" placeholder="Enter Your Email">
+       <div class="button-section">
+       <button class="button">Break the Norm</button>
+    </div>
+     </div>
+</div>
+
+<!--footer-->
+<footer>
+<div class="footer-container">
+<div class="footer-bottom">
+    <p>Copyright &copy;2024; Designer by <span class="Designer">Mahak</span></p>
+</div>
+</footer>
+
+<!--javascript link-->
+<script>
+    
+    window.onload = function() {
+        document.getElementById('fadeImage').classList.add('visible');
+    };
+
+    document.addEventListener("scroll", () => {
+  const scrollSection = document.querySelector(".container-main");
+  const image = document.querySelector(".img-fluid");
+
+  const scrollTop = window.scrollY;
+  const sectionHeight = scrollSection.offsetHeight;
+
+  // Calculate the scroll progress (0 to 1)
+  const progress = Math.min(scrollTop / sectionHeight, 1);
+
+  // Apply animations
+  image.style.transform = `scale(${1 + progress * 0.5})`;
+  image.style.opacity = `${1 - progress}`;
+
+  text.style.transform = `scale(${1 + progress * 0.2})`;
+  text.style.opacity = `${1 - progress}`;
+});
+
+
+</script>
+
+</body>
+</html>
